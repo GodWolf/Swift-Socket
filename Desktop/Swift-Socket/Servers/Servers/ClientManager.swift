@@ -35,21 +35,36 @@ class ClientManager: NSObject {
         isClientConnect = true
         while isClientConnect {
             
-            
-            if let lengthMsg = client.read(5) {//如果断开连接会自动失败
-                
-                let lengthData = Data(bytes: lengthMsg, count: 5)
-                let content = String(bytes: lengthData, encoding: .utf8)!
-                print(content)
-                
-            }else{
-            
+            //获取内容长度
+            guard let lengthMsg = self.client.read(4) else{
                 isClientConnect = false
-                print("失败")
-                client.close()
+                delegate?.disConnectClient(self)
+                print("断开")
+
+                continue
             }
+            var length : Int = 0
+            let lengthData = Data(bytes: lengthMsg, count: 4)
+            (lengthData as NSData).getBytes(&length, length: 4)
+            
+            //获取内容类型
+            guard let typeMsg = self.client.read(2) else{
+                continue
+            }
+            var type : Int = 0
+            let typeData = Data(bytes: typeMsg, count: 2)
+            (typeData as NSData).getBytes(&type, length: 2)
+            
+            //获取内容
+            guard let contentMsg = self.client.read(length) else {
+                continue
+            }
+            let contentData = Data(bytes: contentMsg, count: length)
+            
+            let totalData = lengthData + typeData + contentData
+            delegate?.sentMsg(totalData)
         }
-        
-    }
     
+    }
+
 }

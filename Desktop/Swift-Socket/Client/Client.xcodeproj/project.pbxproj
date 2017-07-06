@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0505D5DE10E55273717A9F2B /* Pods_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BDD22394234FD2E0720AA5 /* Pods_Client.framework */; };
 		B34842531F0D00E1009C6CC0 /* Immessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34842521F0D00E1009C6CC0 /* Immessage.proto.swift */; };
+		B34842551F0DD0BD009C6CC0 /* IMMessage.proto in Resources */ = {isa = PBXBuildFile; fileRef = B34842541F0DD0BD009C6CC0 /* IMMessage.proto */; };
 		B3E424381F0CDF350063A308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E424371F0CDF350063A308 /* AppDelegate.swift */; };
 		B3E4243A1F0CDF350063A308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E424391F0CDF350063A308 /* ViewController.swift */; };
 		B3E4243D1F0CDF350063A308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E4243B1F0CDF350063A308 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		22BDD22394234FD2E0720AA5 /* Pods_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7255156804D70028F05C4CBD /* Pods-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Client/Pods-Client.debug.xcconfig"; sourceTree = "<group>"; };
 		B34842521F0D00E1009C6CC0 /* Immessage.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Immessage.proto.swift; sourceTree = "<group>"; };
+		B34842541F0DD0BD009C6CC0 /* IMMessage.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IMMessage.proto; sourceTree = "<group>"; };
 		B3E424341F0CDF350063A308 /* Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E424371F0CDF350063A308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E424391F0CDF350063A308 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				B3E424391F0CDF350063A308 /* ViewController.swift */,
 				B3E424551F0CDFBA0063A308 /* SunSocket.swift */,
 				B34842521F0D00E1009C6CC0 /* Immessage.proto.swift */,
+				B34842541F0DD0BD009C6CC0 /* IMMessage.proto */,
 				B3E4243B1F0CDF350063A308 /* Main.storyboard */,
 				B3E4243E1F0CDF350063A308 /* Assets.xcassets */,
 				B3E424401F0CDF350063A308 /* LaunchScreen.storyboard */,
@@ -180,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B34842551F0DD0BD009C6CC0 /* IMMessage.proto in Resources */,
 				B3E424421F0CDF350063A308 /* LaunchScreen.storyboard in Resources */,
 				B3E4243F1F0CDF350063A308 /* Assets.xcassets in Resources */,
 				B3E4243D1F0CDF350063A308 /* Main.storyboard in Resources */,
