@@ -10,6 +10,7 @@
 		0505D5DE10E55273717A9F2B /* Pods_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22BDD22394234FD2E0720AA5 /* Pods_Client.framework */; };
 		B34842531F0D00E1009C6CC0 /* Immessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34842521F0D00E1009C6CC0 /* Immessage.proto.swift */; };
 		B34842551F0DD0BD009C6CC0 /* IMMessage.proto in Resources */ = {isa = PBXBuildFile; fileRef = B34842541F0DD0BD009C6CC0 /* IMMessage.proto */; };
+		B38436E01F1CB7C100CB5E22 /* SunSocketTextTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38436DF1F1CB7C100CB5E22 /* SunSocketTextTool.swift */; };
 		B3E424381F0CDF350063A308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E424371F0CDF350063A308 /* AppDelegate.swift */; };
 		B3E4243A1F0CDF350063A308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E424391F0CDF350063A308 /* ViewController.swift */; };
 		B3E4243D1F0CDF350063A308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E4243B1F0CDF350063A308 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		7255156804D70028F05C4CBD /* Pods-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Client/Pods-Client.debug.xcconfig"; sourceTree = "<group>"; };
 		B34842521F0D00E1009C6CC0 /* Immessage.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Immessage.proto.swift; sourceTree = "<group>"; };
 		B34842541F0DD0BD009C6CC0 /* IMMessage.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IMMessage.proto; sourceTree = "<group>"; };
+		B38436DF1F1CB7C100CB5E22 /* SunSocketTextTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunSocketTextTool.swift; sourceTree = "<group>"; };
 		B3E424341F0CDF350063A308 /* Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E424371F0CDF350063A308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E424391F0CDF350063A308 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				B3E424371F0CDF350063A308 /* AppDelegate.swift */,
 				B3E424391F0CDF350063A308 /* ViewController.swift */,
 				B3E424551F0CDFBA0063A308 /* SunSocket.swift */,
+				B38436DF1F1CB7C100CB5E22 /* SunSocketTextTool.swift */,
 				B34842521F0D00E1009C6CC0 /* Immessage.proto.swift */,
 				B34842541F0DD0BD009C6CC0 /* IMMessage.proto */,
 				B3E4243B1F0CDF350063A308 /* Main.storyboard */,
@@ -155,7 +158,7 @@
 				TargetAttributes = {
 					B3E424331F0CDF350063A308 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 9PD774NBY8;
+						DevelopmentTeam = 6UZ64DUPRX;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -251,6 +254,7 @@
 				B3E424521F0CDF4A0063A308 /* yudpsocket.c in Sources */,
 				B3E424501F0CDF4A0063A308 /* ytcpsocket.c in Sources */,
 				B3E424381F0CDF350063A308 /* AppDelegate.swift in Sources */,
+				B38436E01F1CB7C100CB5E22 /* SunSocketTextTool.swift in Sources */,
 				B3E424511F0CDF4A0063A308 /* ytcpsocket.swift in Sources */,
 				B3E424531F0CDF4A0063A308 /* yudpsocket.swift in Sources */,
 				B34842531F0D00E1009C6CC0 /* Immessage.proto.swift in Sources */,
@@ -379,7 +383,7 @@
 			baseConfigurationReference = 7255156804D70028F05C4CBD /* Pods-Client.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9PD774NBY8;
+				DEVELOPMENT_TEAM = 6UZ64DUPRX;
 				INFOPLIST_FILE = Client/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -394,7 +398,7 @@
 			baseConfigurationReference = D36234E40A6D61E132BA25DB /* Pods-Client.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9PD774NBY8;
+				DEVELOPMENT_TEAM = 6UZ64DUPRX;
 				INFOPLIST_FILE = Client/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

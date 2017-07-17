@@ -10,9 +10,14 @@ import UIKit
 
 protocol SunSocketProrocol : class {
     
-    func didReceiveTextMessage(textMessage : TextMessage)
+    ///进入房间
     func didEnterRoom(user : UserInfo)
+    ///离开房间
     func didLeaveRoom(user : UserInfo)
+    ///收到文本消息
+    func didReceiveTextMessage(textMessage : TextMessage)
+    ///收到礼物消息
+    func didReceiveGiftMesssage(giftMessage : GiftMessage)
 }
 
 class SunSocket: NSObject {
@@ -25,7 +30,8 @@ class SunSocket: NSObject {
         
         client = TCPClient(addr: addr, port: port)
         user = UserInfo.Builder()
-        user.name = client.addr
+        user.name = "mac client"
+//        user.name = "iphone client"
         user.level = Int64(arc4random_uniform(20)+1)
     }
 
@@ -40,6 +46,7 @@ extension SunSocket {
         return client.connect(timeout: 5).0
     }
     
+    //MARK: 读取消息
     func readMessage() {
         
         self.isConnected = true
@@ -76,7 +83,7 @@ extension SunSocket {
         }
     }
     
-    //0进入，1离开，2文本
+    //0进入，1离开，2文本，3礼物
     
     //MARK: 进入房间
     func enterRoom() {
@@ -91,6 +98,7 @@ extension SunSocket {
         isConnected = false
         let message = try! user.build()
         sendMessage(data: message.data(), type: 1)
+        client.close()
     }
     
     //MARK: 发送文本消息
@@ -104,7 +112,21 @@ extension SunSocket {
         sendMessage(data: message.data(), type: 2)
     }
     
-    func sendMessage(data : Data,type : Int) {
+    //MARK: 发送礼物
+    func sentGiftMessage(giftName : String, giftUrl : String, giftCount : Int){
+        
+        let content = GiftMessage.Builder()
+        content.user = try! user.build()
+        content.giftname = giftName
+        content.giftUrl = giftUrl
+        content.giftCount = "\(giftCount)"
+        
+        let message = try! content.build()
+        sendMessage(data: message.data(), type: 3)
+    }
+    
+    ///发送消息
+    fileprivate func sendMessage(data : Data,type : Int) {
         
         var length = data.count
         let lengthData : Data = Data(bytes: &(length), count: 4)
@@ -135,6 +157,9 @@ extension SunSocket {
             case 2:
                 let textMessage = try! TextMessage.parseFrom(data: data)
                 self.delegate?.didReceiveTextMessage(textMessage: textMessage)
+            case 3:
+                let giftMessage = try! GiftMessage.parseFrom(data: data)
+                self.delegate?.didReceiveGiftMesssage(giftMessage: giftMessage)
             default: break
                 
             }

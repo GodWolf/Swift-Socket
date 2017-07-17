@@ -67,16 +67,19 @@ extension ServersManager : ClientManagerProtocol {
     ///断开连接
     func disConnectClient(_ client: ClientManager) {
         
-        let index = clients.index(of: client)
-        clients.remove(at: index!)
+        guard let index = clients.index(of: client) else {
+            return
+        }
+        clients.remove(at: index)
     }
     
-    ///发送消息
+    ///进入房间，离开房间，发送文本消息、发送礼物消息
     func sentMsg(_ data : Data) {
         
         for clientMgr in clients {
             clientMgr.client.send(data: data)
         }
     }
+
 }
 

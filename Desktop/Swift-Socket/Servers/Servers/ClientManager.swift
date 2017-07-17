@@ -12,7 +12,7 @@ protocol ClientManagerProtocol : class {
     
     /// 失去连接
     func disConnectClient(_ client : ClientManager)
-    ///发送消息
+    ///进入房间，离开房间，发送文本消息、发送礼物消息
     func sentMsg(_ data : Data)
 }
 
@@ -62,9 +62,17 @@ class ClientManager: NSObject {
             let contentData = Data(bytes: contentMsg, count: length)
             
             let totalData = lengthData + typeData + contentData
+            
+            if type == 1 {//离开房间
+                delegate?.disConnectClient(self)
+            }
+            //发送消息
             delegate?.sentMsg(totalData)
+            
         }
     
     }
 
 }
+
+
