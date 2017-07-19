@@ -11,6 +11,16 @@
 		B34842531F0D00E1009C6CC0 /* Immessage.proto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B34842521F0D00E1009C6CC0 /* Immessage.proto.swift */; };
 		B34842551F0DD0BD009C6CC0 /* IMMessage.proto in Resources */ = {isa = PBXBuildFile; fileRef = B34842541F0DD0BD009C6CC0 /* IMMessage.proto */; };
 		B38436E01F1CB7C100CB5E22 /* SunSocketTextTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38436DF1F1CB7C100CB5E22 /* SunSocketTextTool.swift */; };
+		B393405A1F1DEBEB005034E7 /* SunTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39340591F1DEBEB005034E7 /* SunTitleView.swift */; };
+		B393405C1F1DECFF005034E7 /* SunTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B393405B1F1DECFF005034E7 /* SunTitleStyle.swift */; };
+		B393405E1F1E0652005034E7 /* SunEmotionFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B393405D1F1E0652005034E7 /* SunEmotionFlowLayout.swift */; };
+		B39340621F1F332A005034E7 /* SunEmotionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39340611F1F332A005034E7 /* SunEmotionModel.swift */; };
+		B39340671F1F392D005034E7 /* QHNormalEmotionSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = B39340641F1F392D005034E7 /* QHNormalEmotionSort.plist */; };
+		B39340681F1F392D005034E7 /* QHSohuGifSort.plist in Resources */ = {isa = PBXBuildFile; fileRef = B39340651F1F392D005034E7 /* QHSohuGifSort.plist */; };
+		B393406B1F1F3AC9005034E7 /* SunEmotionPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B393406A1F1F3AC9005034E7 /* SunEmotionPackage.swift */; };
+		B393406D1F1F3DE6005034E7 /* SunEmotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B393406C1F1F3DE6005034E7 /* SunEmotionView.swift */; };
+		B393406F1F1F3F16005034E7 /* SunContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B393406E1F1F3F16005034E7 /* SunContentView.swift */; };
+		B39340711F1F53BD005034E7 /* SunEmotionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B39340701F1F53BD005034E7 /* SunEmotionCollectionViewCell.swift */; };
 		B3E424381F0CDF350063A308 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E424371F0CDF350063A308 /* AppDelegate.swift */; };
 		B3E4243A1F0CDF350063A308 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E424391F0CDF350063A308 /* ViewController.swift */; };
 		B3E4243D1F0CDF350063A308 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E4243B1F0CDF350063A308 /* Main.storyboard */; };
@@ -30,6 +40,16 @@
 		B34842521F0D00E1009C6CC0 /* Immessage.proto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Immessage.proto.swift; sourceTree = "<group>"; };
 		B34842541F0DD0BD009C6CC0 /* IMMessage.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IMMessage.proto; sourceTree = "<group>"; };
 		B38436DF1F1CB7C100CB5E22 /* SunSocketTextTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunSocketTextTool.swift; sourceTree = "<group>"; };
+		B39340591F1DEBEB005034E7 /* SunTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunTitleView.swift; sourceTree = "<group>"; };
+		B393405B1F1DECFF005034E7 /* SunTitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunTitleStyle.swift; sourceTree = "<group>"; };
+		B393405D1F1E0652005034E7 /* SunEmotionFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunEmotionFlowLayout.swift; sourceTree = "<group>"; };
+		B39340611F1F332A005034E7 /* SunEmotionModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunEmotionModel.swift; sourceTree = "<group>"; };
+		B39340641F1F392D005034E7 /* QHNormalEmotionSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHNormalEmotionSort.plist; sourceTree = "<group>"; };
+		B39340651F1F392D005034E7 /* QHSohuGifSort.plist */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = QHSohuGifSort.plist; sourceTree = "<group>"; };
+		B393406A1F1F3AC9005034E7 /* SunEmotionPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunEmotionPackage.swift; sourceTree = "<group>"; };
+		B393406C1F1F3DE6005034E7 /* SunEmotionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunEmotionView.swift; sourceTree = "<group>"; };
+		B393406E1F1F3F16005034E7 /* SunContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunContentView.swift; sourceTree = "<group>"; };
+		B39340701F1F53BD005034E7 /* SunEmotionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SunEmotionCollectionViewCell.swift; sourceTree = "<group>"; };
 		B3E424341F0CDF350063A308 /* Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Client.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E424371F0CDF350063A308 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E424391F0CDF350063A308 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +78,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B39340581F1DEBD1005034E7 /* SunEmotionView */ = {
+			isa = PBXGroup;
+			children = (
+				B39340631F1F392D005034E7 /* Resource */,
+				B393405B1F1DECFF005034E7 /* SunTitleStyle.swift */,
+				B39340591F1DEBEB005034E7 /* SunTitleView.swift */,
+				B393405D1F1E0652005034E7 /* SunEmotionFlowLayout.swift */,
+				B393406E1F1F3F16005034E7 /* SunContentView.swift */,
+				B393406C1F1F3DE6005034E7 /* SunEmotionView.swift */,
+				B39340701F1F53BD005034E7 /* SunEmotionCollectionViewCell.swift */,
+				B393406A1F1F3AC9005034E7 /* SunEmotionPackage.swift */,
+				B39340611F1F332A005034E7 /* SunEmotionModel.swift */,
+			);
+			path = SunEmotionView;
+			sourceTree = "<group>";
+		};
+		B39340631F1F392D005034E7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				B39340641F1F392D005034E7 /* QHNormalEmotionSort.plist */,
+				B39340651F1F392D005034E7 /* QHSohuGifSort.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		B3E4242B1F0CDF350063A308 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +124,7 @@
 		B3E424361F0CDF350063A308 /* Client */ = {
 			isa = PBXGroup;
 			children = (
+				B39340581F1DEBD1005034E7 /* SunEmotionView */,
 				B3E424491F0CDF4A0063A308 /* ysocket */,
 				B3E424371F0CDF350063A308 /* AppDelegate.swift */,
 				B3E424391F0CDF350063A308 /* ViewController.swift */,
@@ -188,6 +234,8 @@
 			files = (
 				B34842551F0DD0BD009C6CC0 /* IMMessage.proto in Resources */,
 				B3E424421F0CDF350063A308 /* LaunchScreen.storyboard in Resources */,
+				B39340671F1F392D005034E7 /* QHNormalEmotionSort.plist in Resources */,
+				B39340681F1F392D005034E7 /* QHSohuGifSort.plist in Resources */,
 				B3E4243F1F0CDF350063A308 /* Assets.xcassets in Resources */,
 				B3E4243D1F0CDF350063A308 /* Main.storyboard in Resources */,
 			);
@@ -249,12 +297,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E4244F1F0CDF4A0063A308 /* ysocket.swift in Sources */,
+				B39340621F1F332A005034E7 /* SunEmotionModel.swift in Sources */,
 				B3E424561F0CDFBA0063A308 /* SunSocket.swift in Sources */,
+				B393405E1F1E0652005034E7 /* SunEmotionFlowLayout.swift in Sources */,
 				B3E4243A1F0CDF350063A308 /* ViewController.swift in Sources */,
 				B3E424521F0CDF4A0063A308 /* yudpsocket.c in Sources */,
 				B3E424501F0CDF4A0063A308 /* ytcpsocket.c in Sources */,
+				B393406B1F1F3AC9005034E7 /* SunEmotionPackage.swift in Sources */,
+				B393405A1F1DEBEB005034E7 /* SunTitleView.swift in Sources */,
 				B3E424381F0CDF350063A308 /* AppDelegate.swift in Sources */,
+				B393405C1F1DECFF005034E7 /* SunTitleStyle.swift in Sources */,
+				B39340711F1F53BD005034E7 /* SunEmotionCollectionViewCell.swift in Sources */,
+				B393406D1F1F3DE6005034E7 /* SunEmotionView.swift in Sources */,
 				B38436E01F1CB7C100CB5E22 /* SunSocketTextTool.swift in Sources */,
+				B393406F1F1F3F16005034E7 /* SunContentView.swift in Sources */,
 				B3E424511F0CDF4A0063A308 /* ytcpsocket.swift in Sources */,
 				B3E424531F0CDF4A0063A308 /* yudpsocket.swift in Sources */,
 				B34842531F0D00E1009C6CC0 /* Immessage.proto.swift in Sources */,

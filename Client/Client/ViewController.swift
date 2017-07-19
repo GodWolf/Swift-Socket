@@ -19,6 +19,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        
+//        let emotionView = SunTitleView(frame: CGRect(x: 30, y: 500, width: 300, height: 40), titles: ["aaaa","ssss","dddd","ffff","gggg","hhhh","jjjj","kkkk","llll","zzzz","xxxx","cccc"], style: SunTitleStyle())
+//        view.addSubview(emotionView)
+        
+        let emotionView = SunEmotionView(frame: CGRect(x: 0, y: 20, width: view.bounds.width, height: 200))
+        view.addSubview(emotionView)
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
