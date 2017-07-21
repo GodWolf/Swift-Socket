@@ -12,6 +12,7 @@ fileprivate let CellIdentify = "SunEmotionCollectionViewCell"
 class SunEmotionView: UIView {
 
     var selectBlock : ((SunEmotionModel) -> Void)?
+    
     fileprivate lazy var emotions : [SunEmotionPackage] = SunEmotionPackage.getEmotions()
     fileprivate var emotionView : SunContentView!
     

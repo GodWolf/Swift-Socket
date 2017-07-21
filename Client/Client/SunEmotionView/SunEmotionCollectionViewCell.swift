@@ -15,8 +15,13 @@ class SunEmotionCollectionViewCell: UICollectionViewCell {
     var emotionModel : SunEmotionModel? {
     
         didSet {
-        
-            imageView.image = UIImage(named: emotionModel!.emotionName)
+            DispatchQueue.global().async {
+                let image = UIImage(named: self.emotionModel!.emotionName)
+                DispatchQueue.main.async {
+                    self.imageView.image = image
+                }
+            }
+            
         }
     }
     
@@ -27,6 +32,7 @@ class SunEmotionCollectionViewCell: UICollectionViewCell {
         imageView.contentMode = .center
         imageView.backgroundColor = UIColor.clear
         contentView.addSubview(imageView)
+        
     }
     
     required init?(coder aDecoder: NSCoder) {

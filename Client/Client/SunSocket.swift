@@ -128,6 +128,7 @@ extension SunSocket {
     ///发送消息
     fileprivate func sendMessage(data : Data,type : Int) {
         
+        
         var length = data.count
         let lengthData : Data = Data(bytes: &(length), count: 4)
         
